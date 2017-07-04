@@ -1,0 +1,42 @@
+.main-category
+    position: relative
+    box-shadow: 0 0 7px $tealDarkest
+    .wrapper
+    &__unit
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding: 40px 70px 20px 15px
+        border-right: 1px solid $grayDark
+    &__left
+        min-width: 190px
+        img
+            display: block
+            max-width: 100%
+            margin: 0 auto
+    &__right
+    &__name
+        margin-bottom: 20px
+        font-size: 27px
+        line-height: 25px
+        color: $grayDark
+    .owl-prev
+        position: absolute
+        top: 50%
+        left: -10%
+        width: 30px
+        height: 90px
+        margin-top: -45px
+        background-image: url('../images/arrowleft.png')
+        background-size: cover
+        background-repeat: no-repeat
+    .owl-next
+        position: absolute
+        top: 50%
+        right: -10%
+        width: 30px
+        height: 90px
+        margin-top: -45px
+        background-image: url('../images/arrowright.png')
+        background-size: cover
+        background-repeat: no-repeat

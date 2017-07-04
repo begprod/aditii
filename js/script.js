@@ -1,13 +1,18 @@
 $(document).ready(function () {
-	console.log('Alive!!!');
-	callSlider();
+	callSliders();
 });
 
-function callSlider() {
-	$(".owl-carousel").owlCarousel({
+function callSliders() {
+	$('#main-slider').owlCarousel({
 		items: 1,
 		loop: true,
 		center: true,
 		autoplay: true
+	});
+	$('#main-category-slider').owlCarousel({
+			items: 3,
+			dots: false,
+			nav: true,
+			navText: []
 	});
 }
