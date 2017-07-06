@@ -34,9 +34,22 @@
 		width: 310px
 		&__input
 			width: 100%
-	//TODO: responsive menu
 	.menu
-		display: none
+		&__wrapper
+			flex-direction: column
+			display: none
+			padding: 25px 0
+			text-align: center
+		&__unit
+			margin: 0 0 15px 0
+			&:last-child
+				margin: 0 0 0 0
+	.menu-trigger
+		display: block
+		padding: 10px 0
+		font-size: 25px
+		text-align: center
+		color: white
 	.main-slider
 		&__unit
 			flex-direction: column
@@ -83,3 +96,9 @@
 		&__unit
 			width: 100%
 			text-align: center
+			&:last-child
+				margin: 0 0 0 0
+		&__head
+			margin: 0 0 10px 0
+		&__links
+			display: none
