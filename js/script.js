@@ -13,6 +13,17 @@ function callSliders() {
 			items: 3,
 			dots: false,
 			nav: true,
-			navText: []
+			navText: [],
+			responsive: {
+				1023: {
+					items: 3
+				},
+				768: {
+					items: 2
+				},
+				320: {
+					items: 1
+				}
+			}
 	});
 }

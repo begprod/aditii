@@ -1,0 +1,85 @@
+@media screen and (max-width: $break-lg)
+	body
+		overflow-x: hidden
+	.wrapper
+		width: 768px
+	.header
+		.wrapper
+			padding: 0 10px 0 10px
+	.menu
+		&__wrapper
+			padding: 0 10px 0 10px
+		&__unit
+			&::after
+				display: none
+	.products-section
+		&__head
+			padding-left: 10px
+		&__unit
+			&:nth-child(3n)
+				margin-right: 50px
+@media screen and (max-width: $break-md)
+	.wrapper
+		width: 400px
+	.header
+		.wrapper
+			flex-direction: column
+			justify-content: center
+		&__unit
+			margin-bottom: 20px
+		.logo
+			display: inline-block
+			margin-top: 15px
+	.b-search
+		width: 310px
+		&__input
+			width: 100%
+	//TODO: responsive menu
+	.menu
+		display: none
+	.main-slider
+		&__unit
+			flex-direction: column
+			justify-content: center
+		&__img
+			width: 100%
+			margin-bottom: 30px
+			img
+				max-width: 100%
+		&__descr
+			text-align: center
+		&__head
+			width: 100%
+			font-size: 41px
+			text-align: center
+		&__text
+			width: 100%
+	.main-category
+		&__unit
+			border: none
+	.products-section
+		&__head
+			padding-left: 0
+			text-align: center
+		&__unit
+			margin-right: 0
+			&:nth-child(3n)
+				margin-right: 0
+	.footer
+		.wrapper
+			justify-content: center
+			align-items: center
+			padding-left: 10px
+			padding-right: 10px
+		&__unit
+			width: 50%
+			margin: 0 0 35px 0
+@media screen and (max-width: $break-sm)
+	.wrapper
+		width: 320px
+	.footer
+		flex-direction: column
+		// TODO create accardion
+		&__unit
+			width: 100%
+			text-align: center
